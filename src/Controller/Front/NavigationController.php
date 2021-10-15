@@ -45,7 +45,7 @@ class NavigationController extends AbstractController
 
         return $this->render('Front/navigation/index.html.twig', [
             'voyages' => $voyages,
-            'voyagesByPays' => $voyagesByPays,
+            // 'voyagesByPays' => $voyagesByPays,
         ]);
     }
 }
