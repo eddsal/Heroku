@@ -11,7 +11,7 @@ class InfoPratiqueFixtures extends Fixture
     public function load(ObjectManager $manager)
     {
         $faker = \Faker\Factory::create('FR-fr');
-        for ($i = 0; $i < 226; $i++) {
+        for ($i = 0; $i < 126; $i++) {
             $infoPratique  = new InfoPratique();
 
             $infoPratique->setDepart($faker->dateTimeBetween("now", '+'.rand(1, 5).' days'));
