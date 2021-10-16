@@ -8,6 +8,7 @@
             {# {{ dump(voyagesByPays) }} #}
 
             {% for voyage in voyagesByPays %}
+              {% if voyage %}
                 <div class="col-12 col-sm-6 col-md-4">
                     <a href="{{ path('voyage_show', {'id': voyage.id}) }}" class="text-white">
                         <figure class="position-relative overflow-hidden">
@@ -18,6 +19,8 @@
                         </figure>
                     </a>
                 </div>
+            {% endif %}
+
             {% endfor %}
 
             {# <div class="col-12 col-sm-6 col-md-4">
