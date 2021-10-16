@@ -38,7 +38,7 @@ class PaysFixtures extends Fixture
         
         for ($i = 0; $i < 126; $i++) {
             $country = new Pays();
-            $country->setName($p);
+            $country->setName($pays[$i]);
             $manager->persist($country);
         }
 
