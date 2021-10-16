@@ -36,7 +36,7 @@ class PaysFixtures extends Fixture
                  "Yémen", "Zambie", "Zimbabwe"
         ];
         
-        foreach ($pays as $p) {
+        for ($i = 0; $i < 126; $i++) {
             $country = new Pays();
             $country->setName($p);
             $manager->persist($country);
